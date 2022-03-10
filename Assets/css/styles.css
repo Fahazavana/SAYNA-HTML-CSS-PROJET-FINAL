@@ -28,6 +28,22 @@
     color: var(--light-gray);
 }
 
+.text-shadow {
+    text-shadow: 2px 2px 2px black;
+}
+
+.top {
+    height: 25vw;
+    background-image: url(../Images/group-1.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top div.card {
+    width: 50%;
+}
+
 .footer-icon,
 .header-icon {
     width: 30px;
