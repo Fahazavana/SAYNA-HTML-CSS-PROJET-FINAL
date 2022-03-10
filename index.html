@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="Assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/bootstrap5/css/bootstrap.min.css" />
+
     <!-- Custom CSS-->
     <link href="Assets/css/styles.css" rel="stylesheet" />
     <title>Index Page</title>
@@ -16,110 +17,274 @@
 <body>
     <!-- Header  -->
     <header class="bg-prim px-4">
-        <nav class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-            <a class="navbar-brand text-white" href="#">
+        <nav class="d-flex flex-column flex-md-row justify-content-between align-items-center fw-bold">
+            <a class="navbar-brand text-white text-shadow2" href="./index.html">
                 <img src="Assets/Images/group-2.svg" alt="" width="50" height="30" /> [Events]
             </a>
 
             <div>
+                <a class="text-white text-decoration-none" href="./search.html">
+                    <img class="header-icon" src="./Assets/Icones/search_icon.svg" alt="" /><span class="d-none d-md-inline"> Search</span></a>
+                <a class="text-white text-decoration-none" href="./about.html">
+                    <img class="header-icon" src="./Assets/Icones/about_icon.svg" alt="" /><span class="d-none d-md-inline">About</span></a>
                 <a class="text-white text-decoration-none" href="">
-                    <img class="header-icon" src="./Assets/Icones/search_icon.svg" alt="" />Search</a>
+                    <img class="header-icon" src="./Assets/Icones/blog_icon.svg" alt="" /><span class="d-none d-md-inline">Blog</span></a>
                 <a class="text-white text-decoration-none" href="">
-                    <img class="header-icon" src="./Assets/Icones/about_icon.svg" alt="" />About</a>
-                <a class="text-white text-decoration-none" href="">
-                    <img class="header-icon" src="./Assets/Icones/blog_icon.svg" alt="" />Blog</a>
-                <a class="text-white text-decoration-none" href="">
-                    <img class="header-icon" src="./Assets/Icones/more_icon.svg" alt="" />More</a>
+                    <img class="header-icon" src="./Assets/Icones/more_icon.svg" alt="" /><span class="d-none d-md-inline">More</span></a>
             </div>
         </nav>
     </header>
-    <div class="d-none d-md-flex flex-column justify-content-center align-items-center top">
-        <h1 class="fw-bold text-white text-shadow h">[EVENTS]... YOUR GATEWAY TO CONNECT WITH EVENTS AROUND ARREA</h1>
+
+    <div class="d-flex flex-column justify-content-end justify-content-md-center align-items-center top">
+        <h1 class="fw-bold text-white text-shadow1 text-center h3">
+            [EVENTS]... YOUR GATEWAY TO CONNECT WITH EVENTS AROUND ARREA
+        </h1>
         <div class="card bg-white p-4 bg-opacity-75 mt-4">
-            <h6 class="text-center mb-3">SEARCH EVENTS NEARBY </h6>
+            <h6 class="text-center mb-3">SEARCH EVENTS NEARBY</h6>
             <form action="." class="input-group">
-                <input type="text" class="form-control" placeholder="Inser your location here">
-                <input class="input-group-btn bg-prim text-white fw-bold" type="submit" value="Search">
+                <input type="text" class="form-control" placeholder="Inser your location here" />
+                <input class="input-group-btn bg-prim text-white fw-bold" type="submit" value="Search" />
             </form>
         </div>
-        <a href="#" class="btn fw-bold bg-white bg-opacity-75 mt-4">How It Work</a>
+        <a href="#" class="btn fw-bold bg-white bg-opacity-75 mt-4">How It Work</a
+      >
     </div>
 
+
+
+
+
+
+
     <!-- Main-->
+    <section class="d-none d-md-block container-fluid p-5">
+      <h2 class="text-center fw-bold text-prim">
+        [Events] works in four simple steps
+      </h2>
+      <div class="row">
+        <div class="col-6">
+          <h3 class="text-center fw-bold">
+            <img
+              class="title-icon"
+              src="./Assets/Icones/locate_icon.svg"
+              alt=""
+            />
+            <br />
+            1-Locate
+          </h3>
+          <p class="text-center">
+            It's simple, on [Events] homepage, enter the name of the location
+            you want to spend some good quality time with people and click on
+            search.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 class="text-center fw-bold">
+            <img
+              class="title-icon"
+              src="./Assets/Icones/confirm_icon.svg"
+              alt=""
+            />
+            <br />
+            2-Confirm or Create
+          </h3>
+          <p class="text-center">
+            Go to check the events nearby the location you searched for and
+            apply for any [Events] available. Every [gathering] has a subject,
+            that you can search for too! If no [Events] are available on the
+            location you selected, you can create and share your event.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h3 class="fw-bold text-center">
+            <img class="title-icon" src="./Assets/Icones/go_icon.svg" alt="" />
+            <br />
+            3-Go
+          </h3>
+          <p class="text-center">
+            Select the [Events], wait for the scheduled day and go! Be prepared
+            to meet new people, create new connections and have a great time!
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 class="fw-bold text-center">
+            <img
+              class="title-icon"
+              src="./Assets/Icones/haveagoodtime_icon.svg"
+              alt=""
+            />
+            <br />
+            4-Have a good time
+          </h3>
 
-    <!-- Footer -->
+          <p class="text-center">
+            Once you are at the [Events] location, look for the host, enjoy and
+            have fun!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="d-flex flex-column p-0">
+      <div
+        class="d-flex align-items-center justify-content-between bg-prim text-white p-3 p-md-5 order-2 order-md-1"
+      >
+        <div class="pe-md-5 line">
+          <h4 class="fw-bold d-none d-md-block">[Events] near you</h4>
+          <p>
+            Every month a new you might find [Events] near you and enjoy the
+            company with people whom you can share mutual interests
+          </p>
+          <h4 class="fw-bold d-block d-md-none">[Events] near you</h4>
+          <a href="#" class="btn bg-md-white fw-bold text-prim rounded-0">
+            Find a [Events]</a
+          >
+        </div>
+
+        <img
+          class="d-none d-md-block rounded-circle groupr-i"
+          src="./Assets/Images/group-2.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="d-flex align-items-center justify-content-between bg-gray2 text-white p-3 p-md-5 order-1 order-md-2"
+      >
+        <div class="pe-md-5 line">
+          <h4 class="fw-bold d-none d-md-block">[Events] connecting you</h4>
+          <p>
+            You can create [Events] events around your area and share them with
+            people you know and with whoever wants to connect
+          </p>
+          <h4 class="fw-bold d-block d-md-none">[Events] connecting you</h4>
+          <a href="#" class="btn bg-md-white fw-bold text-gray2 rounded-0">
+            learn more about [Events]</a
+          >
+        </div>
+
+        <img
+          class="d-none d-md-block rounded-circle groupr-i"
+          src="./Assets/Images/group-3.jpg"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="d-flex align-items-center justify-content-between bg-pblue text-white p-3 p-md-5 order-3"
+      >
+        <div class="pe-md-5 line">
+          <h4 class="fw-bold d-none d-md-block">[Events] spreding love</h4>
+          <p>let you meet new people, share interests and spreading love</p>
+          <h4 class="fw-bold d-block d-md-none">[Events] spreding love</h4>
+        </div>
+
+        <img
+          class="d-none d-md-block rounded-circle groupr-i"
+          src="./Assets/Images/group-4.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+
+    
+
+    <!-- 
+        
+        
+        Footer 
+    
+    
+    -->
     <footer>
-        <div class="d-none  d-md-block container-fluid bg-black p-5">
-            <div class="d-flex justify-content-center align-items-center mb-4">
-                <ul class="footer-link">
-                    <li>
-                        <a class="text-white text-decoration-none" href="">HOME</a>
-                    </li>
-                    <li>
-                        <a class="text-white text-decoration-none" href="">SEARCH</a>
-                    </li>
-                    <li><a class="text-white text-decoration-none" href="">ABOUT US</a></li>
-                    <li><a class="text-white text-decoration-none" href="">ADVERTISE</a></li>
-                </ul>
+      <div class="d-none d-md-block container-fluid bg-black p-5">
+        <div class="d-flex justify-content-center align-items-center mb-4">
+          <ul class="footer-link">
+            <li>
+              <a class="text-white text-decoration-none" href="">HOME</a>
+        </li>
+        <li>
+            <a class="text-white text-decoration-none" href="">SEARCH</a>
+        </li>
+        <li>
+            <a class="text-white text-decoration-none" href="">ABOUT US</a>
+        </li>
+        <li>
+            <a class="text-white text-decoration-none" href="">ADVERTISE</a>
+        </li>
+        </ul>
 
-                <a id="localisation" href="">
-                    <img src="./Assets/Icones/mapsnavbar_icon.svg" alt="">
-                </a>
+        <a id="localisation" href="">
+            <img src="./Assets/Icones/mapsnavbar_icon.svg" alt="" />
+        </a>
 
-                <ul class="footer-link">
-                    <li>
-                        <a class="text-white text-decoration-none" href=""> FACEBOOK</a>
-                    </li>
-                    <li>
-                        <a class="text-white text-decoration-none" href="">TWITTER</a>
-                    </li>
-                    <li>
-                        <a class="text-white text-decoration-none" href="">INSTAGRAM</a>
-                    </li>
-                    <li>
-                        <a class="text-white text-decoration-none" href="">BLOG</a>
-                    </li>
-                </ul>
+        <ul class="footer-link">
+            <li>
+                <a class="text-white text-decoration-none" href=""> FACEBOOK</a>
+            </li>
+            <li>
+                <a class="text-white text-decoration-none" href="">TWITTER</a>
+            </li>
+            <li>
+                <a class="text-white text-decoration-none" href="">INSTAGRAM</a>
+            </li>
+            <li>
+                <a class="text-white text-decoration-none" href="">BLOG</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <h1 class="h3 fw-bold text-white">Suscribe</h1>
+                <form action="." method="post" style="min-width: 300px; width: 50%; margin: auto">
+                    <input type="email" name="email" id="email" class="bg-black border-1 border-end-0 m-0" placeholder="Insert your e-mail here" /><input type="submit" value="send" class="bg-gray2 text-white fw-bold border-1 py-1 px-3 rounded m-0" />
+                </form>
             </div>
-            <div>
-                <div class="row">
-                    <div class="col-4 text-center">
-                        <h1 class="h3 fw-bold text-white">Suscribe</h1>
-                        <form class="input-group" action="." method="post" style="width: 50%; margin:auto;">
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Insert your e-mail here">
-                            <input type="submit" value="send">
-                        </form>
-                    </div>
-                    <div class="col-4 text-center fw-bold text-white">
-                        <h1 class="h3 fw-bold text-white">Contact</h1>
-                        <p>
-                            Have a question or sugestion?
-                        </p>
-                        <a class="text-decoration-none text-prim" href="mailto:contact@events.com">contact@events.com</a>
-                    </div>
-                    <div class="col-4 fw-bold text-white text-center">
-                        <h1 class="h3 fw-bold text-white">About</h1>
-                        [Events] is an online plateform that work to improve and icrease social life connectio, when this nightmare that we are curently living in is over <a class="text-decoration-none text-prim" href="#">learn more</a>
-
-                    </div>
-                </div>
+            <div class="col-4 text-center fw-bold text-white">
+                <h1 class="h3 fw-bold text-white">Contact</h1>
+                <p>Have a question or sugestion?</p>
+                <a class="text-decoration-none text-prim" href="mailto:contact@events.com">contact@events.com</a
+              >
+            </div>
+            <div class="col-4 fw-bold text-white text-center">
+              <h1 class="h3 fw-bold text-white">About</h1>
+              [Events] is an online plateform that work to improve and icrease
+              social life connectio, when this nightmare that we are curently
+              living in is over
+              <a class="text-decoration-none text-prim" href="#">learn more</a>
             </div>
         </div>
-        <div class="d-flex justify-content-between align-items-center bg-gray-footer py-2">
-            <nav>
-                <ul class="bottom-link">
-                    <li><img class="footer-icon" src="./Assets/Icones/facebook_icon.svg" alt=" "></li>
-                    <li><img class="footer-icon" src="./Assets/Icones/twitter_icon.svg" alt=""></li>
-                    <li><img class="footer-icon" src="./Assets/Icones/instagram_icon.svg" alt=" "></li>
-                    <li><img class="footer-icon" src="./Assets/Icones/tumblr_icon.svg" alt=""></li>
-                    <li><img class="footer-icon" src="./Assets/Icones/linkedin_icon.svg" alt=" "></li>
-                </ul>
-            </nav>
+    </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center bg-gray-footer py-2">
+        <nav>
+            <ul class="bottom-link">
+                <li>
+                    <img class="footer-icon" src="./Assets/Icones/facebook_icon.svg" alt=" " />
+                </li>
+                <li>
+                    <img class="footer-icon" src="./Assets/Icones/twitter_icon.svg" alt="" />
+                </li>
+                <li>
+                    <img class="footer-icon" src="./Assets/Icones/instagram_icon.svg" alt=" " />
+                </li>
+                <li>
+                    <img class="footer-icon" src="./Assets/Icones/tumblr_icon.svg" alt="" />
+                </li>
+                <li>
+                    <img class="footer-icon" src="./Assets/Icones/linkedin_icon.svg" alt=" " />
+                </li>
+            </ul>
+        </nav>
 
-            <p class="text-lgray m-0">
-                &copy; 2020 [event], Inc. All rights reserved
-            </p>
-        </div>
+        <p class="text-lgray m-0 ps-5">
+            &copy; 2020 [event], Inc. All rights reserved
+        </p>
+    </div>
     </footer>
 </body>
 
