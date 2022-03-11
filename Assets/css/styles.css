@@ -28,6 +28,14 @@
     background-color: var(--gray-footer-btn);
 }
 
+.bg-lgray {
+    background-color: var(--light-gray);
+}
+
+.text-gray1 {
+    color: var(--primary-gray)
+}
+
 .text-gray2 {
     color: var(--gray-footer-btn)
 }
@@ -130,7 +138,28 @@ input[type="email"]::placeholder {
     color: var(--light-gray)
 }
 
+
+/*****  search.hml ******/
+
+.result {
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.gcol-4 {
+    grid-column: span 4;
+    background-image: url("../Images/group-2.svg"), linear-gradient(var(--primary-color), var(--primary-color));
+    min-height: 300px;
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 @media screen and (max-width:768px) {
+    .gcol-4 {
+        grid-column: span 12;
+    }
     header div a {
         padding: 1rem;
     }

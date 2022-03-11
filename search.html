@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="Assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/bootstrap5/css/bootstrap.min.css" />
     <!-- Custom CSS-->
     <link href="Assets/css/styles.css" rel="stylesheet" />
     <title>Search Page</title>
@@ -49,14 +49,91 @@
       >
     </div>
 
-
     <!-- Main-->
+<div class="bg-lgray">
+    <div class="container mt-5 py-5">
+      <h1 class="text-center text-gray2 fw-bold">
+        Filter by location, host,subject,date, datetime
+      </h1>
 
+      <form class="row d-flex justify-content-" action="." method="get">
 
+        <div class="col-md-3 d-flex flex-column flex-md-row justify-content-between ">
+          <div  class="p-1">
+            <label for="location"> Location</label>
+            <input class="form-control" type="text" name="location" id="location" />
+          </div>
+          <div class="p-1">
+            <label for="host"> Host</label>
+            <input class="form-control" type="text" name="host" id="host" />
+          </div>
+        </div>
 
+        <div class="col-md-3 d-flex justify-content-between ">
+            <div class="p-1">
+              <label for="subject"> Subject</label>
+              <input class="form-control" type="text" name="subject" id="subject" />
+            </div>
+            <div class="p-1">
+              <label for="init_date">Initial date</label>
+              <span class="input-group">
+              <input class="form-control border-end-0" type="date" name="init_date" id="init_date" value="2020-06-18"/>
+              <i class="input-group-text bg-white">Agnd</i>
+            </span>
+            </div>
+          </div>
 
+          <div class="col-md-6 d-flex justify-content-between align-items-end ">
+            <div class="p-1">
+              <label for="fin_date">Final date</label>
+              <span class="input-group">
+              <input class="form-control border-end-0" type="date" name="fin_date" id="fin_date" value="2020-06-18" />
+              <i class="input-group-text bg-white">Agnd</i>
+            </span>
+            </div>
+            <div class="p-1"> 
+                <label for="datetime"> Daytime</label>
+                <select class="form-select" name="datetime" id="datetime">
+                    <option selected>Choose</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
 
-    
+            <div class="p-1">
+                <input class="btn btn-primary" type="button" value="Search">
+                <button class="btn btn-warning"> <i>ics</i>Clear filter</button>
+            </div>
+          </div>
+
+      </form>
+    </div>
+</div>
+
+    <div class="container py-5">
+      <h3 class="text-center fw-bold text-gray1">
+        Search Result Found 7 [Events] Nearby
+      </h3>
+
+      <div class="result mt-5">
+        <div class="gcol-4 text-center">
+          <a href="#" class="text-white text-decoration-none fw-bold fs-5"
+            >go to [gathering] example</a
+          >
+        </div>
+        <div class="gcol-4 text-center">
+          <a href="#" class="text-white text-decoration-none fw-bold fs-5"
+            >go to [gathering] example</a
+          >
+        </div>
+        <div class="gcol-4 text-center">
+          <a href="#" class="text-white text-decoration-none fw-bold fs-5"
+            >go to [gathering] example</a
+          >
+        </div>
+      </div>
+    </div>
 
     <!-- 
         
@@ -66,11 +143,11 @@
     
     -->
     <footer>
-        <div class="d-none d-md-block container-fluid bg-black p-5">
-          <div class="d-flex justify-content-center align-items-center mb-4">
-            <ul class="footer-link">
-              <li>
-                <a class="text-white text-decoration-none" href="">HOME</a>
+      <div class="d-none d-md-block container-fluid bg-black p-5">
+        <div class="d-flex justify-content-center align-items-center mb-4">
+          <ul class="footer-link">
+            <li>
+              <a class="text-white text-decoration-none" href="">HOME</a>
         </li>
         <li>
             <a class="text-white text-decoration-none" href="">SEARCH</a>
@@ -114,14 +191,14 @@
                 <h1 class="h3 fw-bold text-white">Contact</h1>
                 <p>Have a question or sugestion?</p>
                 <a class="text-decoration-none text-prim" href="mailto:contact@events.com">contact@events.com</a
-                >
-              </div>
-              <div class="col-4 fw-bold text-white text-center">
-                <h1 class="h3 fw-bold text-white">About</h1>
-                [Events] is an online plateform that work to improve and icrease
-                social life connectio, when this nightmare that we are curently
-                living in is over
-                <a class="text-decoration-none text-prim" href="#">learn more</a>
+              >
+            </div>
+            <div class="col-4 fw-bold text-white text-center">
+              <h1 class="h3 fw-bold text-white">About</h1>
+              [Events] is an online plateform that work to improve and icrease
+              social life connectio, when this nightmare that we are curently
+              living in is over
+              <a class="text-decoration-none text-prim" href="#">learn more</a>
             </div>
         </div>
     </div>
