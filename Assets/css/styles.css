@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 :root {
     --primary-color: #d35649;
     --primary-gray: #98a5a5;
@@ -8,8 +9,16 @@
     --light-gray: #eee;
 }
 
+.font-pt {
+    font-family: 'PT Sans', sans-serif;
+}
+
 .bg-prim {
     background-color: var(--primary-color);
+}
+
+.fill-prim {
+    fill: var(--primary-color);
 }
 
 .bg-pblue {
@@ -40,6 +49,10 @@
     color: var(--gray-footer-btn)
 }
 
+.text-pblue {
+    color: var(--primary-blue)
+}
+
 .text-prim {
     color: var(--primary-color);
 }
@@ -63,6 +76,16 @@
     height: 30px;
 }
 
+.i-size-2 {
+    width: 2rem;
+    height: 2rem;
+}
+
+.i-size-1 {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
 .bottom-link,
 .footer-link {
     margin: 0;
@@ -72,6 +95,10 @@
     justify-items: center;
     list-style-type: none;
     justify-content: center;
+}
+
+.list-style-none {
+    list-style-type: none;
 }
 
 
@@ -107,13 +134,13 @@
 /********************** Dans index.html *****************************/
 
 .top {
+    height: 25vw;
     min-width: 370px;
     min-height: 500px;
-    height: 25vw;
-    background-image: url(../Images/group-1.jpg);
-    background-position: 45%;
     background-size: cover;
+    background-position: 45%;
     background-repeat: no-repeat;
+    background-image: url(../Images/group-1.jpg);
 }
 
 .top div.card {
@@ -135,7 +162,7 @@
 }
 
 input[type="email"]::placeholder {
-    color: var(--light-gray)
+    color: var(--light-gray);
 }
 
 
@@ -148,12 +175,32 @@ input[type="email"]::placeholder {
 }
 
 .gcol-4 {
-    grid-column: span 4;
-    background-image: url("../Images/group-2.svg"), linear-gradient(var(--primary-color), var(--primary-color));
-    min-height: 300px;
     height: 25vh;
-    background-repeat: no-repeat;
+    min-height: 300px;
+    grid-column: span 4;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../Images/group-2.svg"), linear-gradient(var(--primary-color), var(--primary-color));
+}
+
+
+/** about **/
+
+li svg {
+    fill: #509bd7;
+    width: 30px;
+    height: 30px;
+}
+
+a svg {
+    fill: var(--gray-footer-btn);
+    width: 3rem;
+    height: 3rem;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
 }
 
 @media screen and (max-width:768px) {
@@ -186,9 +233,9 @@ input[type="email"]::placeholder {
     .order-3>.line {
         width: 100%;
         padding: 15%;
+        height: auto;
         min-width: 370px;
         min-height: 200px;
-        height: auto!;
         border-radius: 8vh;
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -221,6 +268,3 @@ input[type="email"]::placeholder {
         padding-left: 0.5rem;
     }
 }
-
-
-/****************** About ******************/
