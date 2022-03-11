@@ -9,16 +9,18 @@
     --light-gray: #eee;
 }
 
+
+/** FONT **/
+
 .font-pt {
     font-family: 'PT Sans', sans-serif;
 }
 
+
+/** BACKGROUND **/
+
 .bg-prim {
     background-color: var(--primary-color);
-}
-
-.fill-prim {
-    fill: var(--primary-color);
 }
 
 .bg-pblue {
@@ -41,6 +43,9 @@
     background-color: var(--light-gray);
 }
 
+
+/** TEXT COLOR **/
+
 .text-gray1 {
     color: var(--primary-gray)
 }
@@ -61,6 +66,9 @@
     color: var(--light-gray);
 }
 
+
+/** TEXT SHADOW **/
+
 .text-shadow1 {
     text-shadow: 2px 2px 2px black;
 }
@@ -69,11 +77,40 @@
     text-shadow: 2px 2px var(--primary-purple);
 }
 
-.title-icon,
-.footer-icon,
-.header-icon {
-    width: 30px;
-    height: 30px;
+
+/** FILL SVG **/
+
+.fill-white {
+    fill: white;
+}
+
+.fill-prim {
+    fill: var(--primary-color);
+}
+
+.fill-pblue {
+    fill: var(--primary-blue);
+}
+
+.fill-gray1 {
+    fill: var(--primary-gray);
+}
+
+.fill-gray2 {
+    fill: var(--gray-footer-btn);
+}
+
+
+/** SVG ICON SIZE **/
+
+.i-size-0 {
+    width: 4rem;
+    height: 4rem;
+}
+
+.i-size-1 {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .i-size-2 {
@@ -81,9 +118,14 @@
     height: 2rem;
 }
 
-.i-size-1 {
-    width: 3.5rem;
-    height: 3.5rem;
+.i-size-3 {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.i-size-4 {
+    width: 1rem;
+    height: 1rem;
 }
 
 .bottom-link,
@@ -101,12 +143,6 @@
     list-style-type: none;
 }
 
-
-/** header **/
-
-
-/** footer **/
-
 .footer-link li {
     padding: 0.2rem;
     border-top: 3px solid white;
@@ -122,6 +158,8 @@
     height: 80px;
     border-radius: 50%;
     border: 3px solid white;
+    vertical-align: baseline;
+    fill: white;
 }
 
 #localisation img {
@@ -181,21 +219,6 @@ input[type="email"]::placeholder {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-image: url("../Images/group-2.svg"), linear-gradient(var(--primary-color), var(--primary-color));
-}
-
-
-/** about **/
-
-li svg {
-    fill: #509bd7;
-    width: 30px;
-    height: 30px;
-}
-
-a svg {
-    fill: var(--gray-footer-btn);
-    width: 3rem;
-    height: 3rem;
 }
 
 iframe {
